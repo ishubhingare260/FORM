@@ -3,7 +3,6 @@ function registration()
 
 		var name= document.getElementById("t1").value;
 		var email= document.getElementById("t2").value;
-		var uname= document.getElementById("t3").value;
 		var pwd= document.getElementById("t4").value;			
 		var cpwd= document.getElementById("t5").value;
 		
@@ -27,14 +26,6 @@ function registration()
 		else if (!filter.test(email))
 		{
 			alert('Invalid email');
-		}
-		else if(uname=='')
-		{
-			alert('Please enter the user name.');
-		}
-		else if(!letters.test(uname))
-		{
-			alert('User name field required only alphabet characters');
 		}
 		else if(pwd=='')
 		{
@@ -71,7 +62,6 @@ function registration()
 	{
 		document.getElementById("t1").value="";
 		document.getElementById("t2").value="";
-		document.getElementById("t3").value="";
 		document.getElementById("t4").value="";
 		document.getElementById("t5").value="";
 	}
